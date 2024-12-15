@@ -6,7 +6,7 @@
       <class name="com.selenium.project.testcases.Login">
         <methods>
           <include name="setup"/>
-          <include name="loginWithValidCredenetials"/>
+          <include name="loginWithDataDriven" invocation-numbers="1 2"/>
           <include name="tearDorn"/>
         </methods>
       </class> <!-- com.selenium.project.testcases.Login -->

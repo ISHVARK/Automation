@@ -32,6 +32,13 @@ public class LoginPage extends BasePage {
 	@FindBy(xpath = "//p[contains(@class, 'oxd-alert-content-text')]")
 	WebElement Warningtext;
 
+
+	@FindBy(xpath = "//label[text()=\"Username\"]//parent::div//following-sibling::div//following-sibling::span[text()=\"Required\"]")
+	WebElement usernameRequiredWarning;
+
+	@FindBy(xpath = "//label[text()=\"Password\"]//parent::div//following-sibling::div//following-sibling::span[text()=\"Required\"]")
+	WebElement passwordRequiredWarning;
+
 	public void login(String usernme, String passwod) throws Exception {
 		userName.sendKeys(usernme);
 		password.sendKeys(passwod);
@@ -41,10 +48,12 @@ public class LoginPage extends BasePage {
 	public String GetErrorMessage() {
 		return errormsg.getText();
 	}
-
-	public boolean isErrorMsgDisplyed() {
-		
-		return Warningtext.isDisplayed();
+	
+	public String GetUsernameRequiredWarning() {
+		return usernameRequiredWarning.getText();
+	}
+	public String GetPasswordRequiredWarning() {
+		return passwordRequiredWarning.getText();
 	}
 
 }

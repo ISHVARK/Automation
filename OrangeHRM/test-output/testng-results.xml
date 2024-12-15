@@ -1,57 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-15T17:06:31 IST" name="Default suite" finished-at="2024-12-15T17:06:56 IST" duration-ms="25228">
+  <suite started-at="2024-12-15T18:44:08 IST" name="Default suite" finished-at="2024-12-15T18:45:03 IST" duration-ms="54812">
     <groups>
     </groups>
-    <test started-at="2024-12-15T17:06:31 IST" name="Default test" finished-at="2024-12-15T17:06:56 IST" duration-ms="25228">
+    <test started-at="2024-12-15T18:44:08 IST" name="Default test" finished-at="2024-12-15T18:45:03 IST" duration-ms="54812">
       <class name="com.selenium.project.testcases.Login">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:31 IST" name="setup" finished-at="2024-12-15T17:06:36 IST" duration-ms="4584" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:09 IST" name="setup" finished-at="2024-12-15T18:44:13 IST" duration-ms="4826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInValidCredenetials()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:36 IST" name="loginWithInValidCredenetials" finished-at="2024-12-15T17:06:38 IST" duration-ms="2012" status="PASS">
+        <test-method signature="loginWithDataDriven(java.lang.String,java.lang.String)[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:13 IST" name="loginWithDataDriven" data-provider="TestData" finished-at="2024-12-15T18:44:16 IST" duration-ms="2281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDataDriven -->
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:16 IST" name="tearDorn" finished-at="2024-12-15T18:44:16 IST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDorn -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:16 IST" name="setup" finished-at="2024-12-15T18:44:20 IST" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithDataDriven(java.lang.String,java.lang.String)[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:20 IST" name="loginWithDataDriven" data-provider="TestData" finished-at="2024-12-15T18:44:22 IST" duration-ms="2319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDataDriven -->
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:22 IST" name="tearDorn" finished-at="2024-12-15T18:44:22 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDorn -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:22 IST" name="setup" finished-at="2024-12-15T18:44:26 IST" duration-ms="3848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInValidCredenetials()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:26 IST" name="loginWithInValidCredenetials" finished-at="2024-12-15T18:44:29 IST" duration-ms="2332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidCredenetials -->
-        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:38 IST" name="tearDorn" finished-at="2024-12-15T17:06:38 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:29 IST" name="tearDorn" finished-at="2024-12-15T18:44:29 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDorn -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:38 IST" name="setup" finished-at="2024-12-15T17:06:41 IST" duration-ms="3600" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:29 IST" name="setup" finished-at="2024-12-15T18:44:33 IST" duration-ms="3796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithInValidUsernameAndValidPassword()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:41 IST" name="loginWithInValidUsernameAndValidPassword" finished-at="2024-12-15T17:06:43 IST" duration-ms="1866" status="PASS">
+        <test-method signature="loginWithInValidUsernameAndValidPassword()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:33 IST" name="loginWithInValidUsernameAndValidPassword" finished-at="2024-12-15T18:44:35 IST" duration-ms="2399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithInValidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:43 IST" name="tearDorn" finished-at="2024-12-15T17:06:44 IST" duration-ms="167" status="PASS">
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:35 IST" name="tearDorn" finished-at="2024-12-15T18:44:35 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDorn -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:44 IST" name="setup" finished-at="2024-12-15T17:06:47 IST" duration-ms="3841" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:35 IST" name="setup" finished-at="2024-12-15T18:44:39 IST" duration-ms="4029" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidCredenetials()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:47 IST" name="loginWithValidCredenetials" finished-at="2024-12-15T17:06:50 IST" duration-ms="2375" status="PASS">
+        <test-method signature="loginWithValidCredenetials()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:39 IST" name="loginWithValidCredenetials" finished-at="2024-12-15T18:44:41 IST" duration-ms="2263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredenetials -->
-        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:50 IST" name="tearDorn" finished-at="2024-12-15T17:06:50 IST" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:41 IST" name="tearDorn" finished-at="2024-12-15T18:44:42 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDorn -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:50 IST" name="setup" finished-at="2024-12-15T17:06:54 IST" duration-ms="3629" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:42 IST" name="setup" finished-at="2024-12-15T18:44:45 IST" duration-ms="3847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginWithValidUsernameAndInvalidPassword()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:54 IST" name="loginWithValidUsernameAndInvalidPassword" finished-at="2024-12-15T17:06:56 IST" duration-ms="2532" status="PASS">
+        <test-method signature="loginWithValidUsernameAndInvalidPassword()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:45 IST" name="loginWithValidUsernameAndInvalidPassword" finished-at="2024-12-15T18:44:48 IST" duration-ms="2220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidUsernameAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@1a6d8329]" started-at="2024-12-15T17:06:56 IST" name="tearDorn" finished-at="2024-12-15T17:06:56 IST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:48 IST" name="tearDorn" finished-at="2024-12-15T18:44:48 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDorn -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:48 IST" name="setup" finished-at="2024-12-15T18:44:52 IST" duration-ms="3661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithoutProvidingCredentials()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:52 IST" name="loginWithoutProvidingCredentials" finished-at="2024-12-15T18:44:52 IST" duration-ms="908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutProvidingCredentials -->
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:52 IST" name="tearDorn" finished-at="2024-12-15T18:44:53 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDorn -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:53 IST" name="setup" finished-at="2024-12-15T18:44:56 IST" duration-ms="3811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithoutProvidingPassword()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:56 IST" name="loginWithoutProvidingPassword" finished-at="2024-12-15T18:44:57 IST" duration-ms="653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutProvidingPassword -->
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:57 IST" name="tearDorn" finished-at="2024-12-15T18:44:57 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDorn -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:44:57 IST" name="setup" finished-at="2024-12-15T18:45:02 IST" duration-ms="4298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithoutProvidingUsername()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:45:02 IST" name="loginWithoutProvidingUsername" finished-at="2024-12-15T18:45:03 IST" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutProvidingUsername -->
+        <test-method is-config="true" signature="tearDorn()[pri:0, instance:com.selenium.project.testcases.Login@27406a17]" started-at="2024-12-15T18:45:03 IST" name="tearDorn" finished-at="2024-12-15T18:45:03 IST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDorn -->
