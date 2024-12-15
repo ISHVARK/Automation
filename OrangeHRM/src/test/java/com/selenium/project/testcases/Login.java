@@ -44,6 +44,6 @@ public void loginWithValidCredenetials() throws Exception{
 public void loginWithInValidCredenetials() throws Exception{
 		loginPage.login(dataProp.getProperty("Username"), dataProp.getProperty("invalidPassword"));
 		Assert.assertEquals(loginPage.GetErrorMessage(), dataProp.getProperty("invalidCredentailsErrorMessage"));
-A
+
 	}
 }
