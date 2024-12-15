@@ -32,8 +32,6 @@ public class Login extends Base {
 	public void tearDorn() {
 		//driver.quit();
 		//driver.close();
-		
-		//Stagging 2
 	}
 
 	@Test
