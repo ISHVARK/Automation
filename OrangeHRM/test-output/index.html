@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ishva\AppData\Local\Temp\testng-eclipse--2020802594\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\ishva\git\OrangeHRM\Automation\OrangeHRM\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,61 +92,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingCredentials">loginWithoutProvidingCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithDataDriven(Admin, admin123)">loginWithDataDriven(Admin, admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithDataDriven(Admin, admin123)">loginWithDataDriven(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithDataDriven(Admin, admin123)">loginWithDataDriven(Admin, admin123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithDataDriven(Admin, admin123)">loginWithDataDriven(Admin, admin123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithInValidCredenetials">loginWithInValidCredenetials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithInValidCredenetials">loginWithInValidCredenetials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithInValidUsernameAndValidPassword">loginWithInValidUsernameAndValidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithInValidUsernameAndValidPassword">loginWithInValidUsernameAndValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithValidCredenetials">loginWithValidCredenetials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithValidCredenetials">loginWithValidCredenetials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithValidUsernameAndInvalidPassword">loginWithValidUsernameAndInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithValidUsernameAndInvalidPassword">loginWithValidUsernameAndInvalidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingCredentials">loginWithoutProvidingCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingPassword">loginWithoutProvidingPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingPassword">loginWithoutProvidingPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingUsername">loginWithoutProvidingUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.selenium.project.testcases.Login" class="method navigator-link" hash-for-method="loginWithoutProvidingUsername">loginWithoutProvidingUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -157,8 +166,51 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.selenium.project.testcases.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithoutProvidingCredentials">
+                  </a> <!-- loginWithoutProvidingCredentials -->
+                  <span class="method-name">loginWithoutProvidingCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&quot;Password&quot;]//parent::div//following-sibling::div//following-sibling::span[text()=&quot;Required&quot;]&quot;}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70b3162d4de43edb2b4c1f664ff00167, findElement {value=//label[text()=&quot;Password&quot;]//parent::div//following-sibling::div//following-sibling::span[text()=&quot;Required&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ishva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55202}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55202/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70b3162d4de43edb2b4c1f664ff00167
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.selenium.project.pageobjects.LoginPage.GetPasswordRequiredWarning(LoginPage.java:56)
+	at com.selenium.project.testcases.Login.loginWithoutProvidingCredentials(Login.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.selenium.project.testcases.Login</span>
@@ -210,13 +262,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithoutProvidingCredentials">
-                  </a> <!-- loginWithoutProvidingCredentials -->
-                  <span class="method-name">loginWithoutProvidingCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginWithoutProvidingPassword">
                   </a> <!-- loginWithoutProvidingPassword -->
                   <span class="method-name">loginWithoutProvidingPassword</span>
@@ -230,54 +275,57 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ishva\AppData\Local\Temp\testng-eclipse--2020802594\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ishva\git\OrangeHRM\Automation\OrangeHRM\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.selenium.project.listners.MyListners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.selenium.project.testcases.Login&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -285,66 +333,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginWithInValidUsernameAndValidPassword')
+data.setCell(0, 1, 'loginWithoutProvidingCredentials')
 data.setCell(0, 2, 'com.selenium.project.testcases.Login')
-data.setCell(0, 3, 2399);
+data.setCell(0, 3, 15525);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithInValidCredenetials')
+data.setCell(1, 1, 'loginWithDataDriven')
 data.setCell(1, 2, 'com.selenium.project.testcases.Login')
-data.setCell(1, 3, 2332);
+data.setCell(1, 3, 2808);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginWithDataDriven')
+data.setCell(2, 1, 'loginWithInValidCredenetials')
 data.setCell(2, 2, 'com.selenium.project.testcases.Login')
-data.setCell(2, 3, 2319);
+data.setCell(2, 3, 2701);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithDataDriven')
 data.setCell(3, 2, 'com.selenium.project.testcases.Login')
-data.setCell(3, 3, 2281);
+data.setCell(3, 3, 2644);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginWithValidCredenetials')
+data.setCell(4, 1, 'loginWithValidUsernameAndInvalidPassword')
 data.setCell(4, 2, 'com.selenium.project.testcases.Login')
-data.setCell(4, 3, 2263);
+data.setCell(4, 3, 2313);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginWithValidUsernameAndInvalidPassword')
+data.setCell(5, 1, 'loginWithValidCredenetials')
 data.setCell(5, 2, 'com.selenium.project.testcases.Login')
-data.setCell(5, 3, 2220);
+data.setCell(5, 3, 1794);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'loginWithoutProvidingUsername')
+data.setCell(6, 1, 'loginWithInValidUsernameAndValidPassword')
 data.setCell(6, 2, 'com.selenium.project.testcases.Login')
-data.setCell(6, 3, 960);
+data.setCell(6, 3, 1649);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithoutProvidingCredentials')
+data.setCell(7, 1, 'loginWithoutProvidingUsername')
 data.setCell(7, 2, 'com.selenium.project.testcases.Login')
-data.setCell(7, 3, 908);
+data.setCell(7, 3, 712);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'loginWithoutProvidingPassword')
 data.setCell(8, 2, 'com.selenium.project.testcases.Login')
-data.setCell(8, 3, 653);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(8, 3, 527);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -357,107 +405,109 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithDataDriven(Admin, admin123)</span>
-                <span class="method-start">4826 ms</span>
+                <span class="method-start">8559 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">7110 ms</span>
+                <span class="method-start">11218 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7312 ms</span>
+                <span class="method-start">11422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithDataDriven(Admin, admin123)</span>
-                <span class="method-start">11189 ms</span>
+                <span class="method-start">18331 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">13509 ms</span>
+                <span class="method-start">21141 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">13719 ms</span>
+                <span class="method-start">21333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidCredenetials</span>
-                <span class="method-start">17567 ms</span>
+                <span class="method-start">30986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">19900 ms</span>
+                <span class="method-start">33687 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">20080 ms</span>
+                <span class="method-start">33922 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithInValidUsernameAndValidPassword</span>
-                <span class="method-start">23876 ms</span>
+                <span class="method-start">37596 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">26276 ms</span>
+                <span class="method-start">39245 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26451 ms</span>
+                <span class="method-start">39400 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredenetials</span>
-                <span class="method-start">30480 ms</span>
+                <span class="method-start">42760 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">32744 ms</span>
+                <span class="method-start">44554 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">32919 ms</span>
+                <span class="method-start">44696 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidUsernameAndInvalidPassword</span>
-                <span class="method-start">36766 ms</span>
+                <span class="method-start">47954 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">38987 ms</span>
+                <span class="method-start">50268 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">39193 ms</span>
+                <span class="method-start">50422 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">loginWithoutProvidingCredentials</span>
-                <span class="method-start">42854 ms</span>
+                <span class="method-start">53795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">43763 ms</span>
+                <span class="method-start">69430 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">43942 ms</span>
+                <span class="method-start">69618 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithoutProvidingPassword</span>
-                <span class="method-start">47753 ms</span>
+                <span class="method-start">73015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">48407 ms</span>
+                <span class="method-start">73542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">48585 ms</span>
+                <span class="method-start">73696 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithoutProvidingUsername</span>
-                <span class="method-start">52883 ms</span>
+                <span class="method-start">77434 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDorn</span>
-                <span class="method-start">53844 ms</span>
+                <span class="method-start">78148 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

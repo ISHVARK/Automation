@@ -8,18 +8,44 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">54,812</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">80,462</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">com.selenium.project.testcases.Login</td><td><a href="#m0">loginWithDataDriven</a></td><td rowspan="2">1734268453986</td><td rowspan="2">2281</td></tr><tr class="passedeven"><td><a href="#m1">loginWithDataDriven</a></td></tr><tr class="passedeven"><td><a href="#m2">loginWithInValidCredenetials</a></td><td rowspan="1">1734268466727</td><td rowspan="1">2332</td></tr><tr class="passedeven"><td><a href="#m3">loginWithInValidUsernameAndValidPassword</a></td><td rowspan="1">1734268473036</td><td rowspan="1">2399</td></tr><tr class="passedeven"><td><a href="#m4">loginWithValidCredenetials</a></td><td rowspan="1">1734268479640</td><td rowspan="1">2263</td></tr><tr class="passedeven"><td><a href="#m5">loginWithValidUsernameAndInvalidPassword</a></td><td rowspan="1">1734268485926</td><td rowspan="1">2220</td></tr><tr class="passedeven"><td><a href="#m6">loginWithoutProvidingCredentials</a></td><td rowspan="1">1734268492014</td><td rowspan="1">908</td></tr><tr class="passedeven"><td><a href="#m7">loginWithoutProvidingPassword</a></td><td rowspan="1">1734268496913</td><td rowspan="1">653</td></tr><tr class="passedeven"><td><a href="#m8">loginWithoutProvidingUsername</a></td><td rowspan="1">1734268502043</td><td rowspan="1">960</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.selenium.project.testcases.Login</td><td><a href="#m0">loginWithoutProvidingCredentials</a></td><td rowspan="1">1734281554067</td><td rowspan="1">15525</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.selenium.project.testcases.Login</td><td><a href="#m1">loginWithDataDriven</a></td><td rowspan="2">1734281518603</td><td rowspan="2">2808</td></tr><tr class="passedeven"><td><a href="#m2">loginWithDataDriven</a></td></tr><tr class="passedeven"><td><a href="#m3">loginWithInValidCredenetials</a></td><td rowspan="1">1734281531258</td><td rowspan="1">2701</td></tr><tr class="passedeven"><td><a href="#m4">loginWithInValidUsernameAndValidPassword</a></td><td rowspan="1">1734281537868</td><td rowspan="1">1649</td></tr><tr class="passedeven"><td><a href="#m5">loginWithValidCredenetials</a></td><td rowspan="1">1734281543032</td><td rowspan="1">1794</td></tr><tr class="passedeven"><td><a href="#m6">loginWithValidUsernameAndInvalidPassword</a></td><td rowspan="1">1734281548226</td><td rowspan="1">2313</td></tr><tr class="passedeven"><td><a href="#m7">loginWithoutProvidingPassword</a></td><td rowspan="1">1734281573287</td><td rowspan="1">527</td></tr><tr class="passedeven"><td><a href="#m8">loginWithoutProvidingUsername</a></td><td rowspan="1">1734281577706</td><td rowspan="1">712</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.selenium.project.testcases.Login#loginWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.selenium.project.testcases.Login#loginWithoutProvidingCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[text()=&quot;Password&quot;]//parent::div//following-sibling::div//following-sibling::span[text()=&quot;Required&quot;]&quot;}
+  (Session info: chrome=131.0.6778.140)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [70b3162d4de43edb2b4c1f664ff00167, findElement {value=//label[text()=&quot;Password&quot;]//parent::div//following-sibling::div//following-sibling::span[text()=&quot;Required&quot;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\ishva\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55202}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55202/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 70b3162d4de43edb2b4c1f664ff00167
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.selenium.project.pageobjects.LoginPage.GetPasswordRequiredWarning(LoginPage.java:56)
+	at com.selenium.project.testcases.Login.loginWithoutProvidingCredentials(Login.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">com.selenium.project.testcases.Login#loginWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.selenium.project.testcases.Login#loginWithInValidCredenetials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.selenium.project.testcases.Login#loginWithInValidUsernameAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.selenium.project.testcases.Login#loginWithValidCredenetials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.selenium.project.testcases.Login#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.selenium.project.testcases.Login#loginWithoutProvidingCredentials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.selenium.project.testcases.Login#loginWithDataDriven</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.selenium.project.testcases.Login#loginWithInValidCredenetials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.selenium.project.testcases.Login#loginWithInValidUsernameAndValidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.selenium.project.testcases.Login#loginWithValidCredenetials</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.selenium.project.testcases.Login#loginWithValidUsernameAndInvalidPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m7">com.selenium.project.testcases.Login#loginWithoutProvidingPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m8">com.selenium.project.testcases.Login#loginWithoutProvidingUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

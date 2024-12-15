@@ -22,12 +22,12 @@ public class Login extends Base {
 		// TODO Auto-generated constructor stub
 	}
 
-	WebDriver driver;
+	public static WebDriver driver;
 	DashboardPage dashboard;
 
 	@BeforeMethod
 	public void setup() {
-		driver = InitializeBrowserAndOpenApplicationURL(prop.getProperty("Browser"));
+		driver = InitializeBrowserAndOpenApplicationURL(prop.getProperty("BrowserName"));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		loginPage = new LoginPage(driver);
 		dashboard = new DashboardPage(driver);
@@ -54,34 +54,6 @@ public class Login extends Base {
 	}
 
 	@Test
-	public void loginWithValidCredenetials() throws Exception {
-		loginPage.login(dataProp.getProperty("Username"), dataProp.getProperty("Password"));
-		Assert.assertTrue(dashboard.IsUserNavigatedToDashboard(), "User has navigated to dashboard.");
-
-	}
-
-	@Test
-	public void loginWithInValidCredenetials() throws Exception {
-		loginPage.login(dataProp.getProperty("invalidUsername"), dataProp.getProperty("invalidPassword"));
-		Assert.assertEquals(loginPage.GetErrorMessage(), dataProp.getProperty("invalidCredentailsErrorMessage"),
-				"User has displayed a Warning Text due to invalid Credentials");
-	}
-
-	@Test
-	public void loginWithInValidUsernameAndValidPassword() throws Exception {
-		loginPage.login(dataProp.getProperty("invalidUsername"), dataProp.getProperty("Password"));
-		Assert.assertEquals(loginPage.GetErrorMessage(), dataProp.getProperty("invalidCredentailsErrorMessage"),
-				"User has displayed a Warning Text due to invalid Username.");
-	}
-
-	@Test
-	public void loginWithValidUsernameAndInvalidPassword() throws Exception {
-		loginPage.login(dataProp.getProperty("Username"), dataProp.getProperty("invalidPassword"));
-		Assert.assertEquals(loginPage.GetErrorMessage(), dataProp.getProperty("invalidCredentailsErrorMessage"),
-				"User has displayed a Warning Text due to invalid Password.");
-	}
-
-	@Test
 	public void loginWithoutProvidingCredentials() throws Exception {
 		loginPage.login("", "");
 		if (loginPage.GetUsernameRequiredWarning().equals(loginPage.GetPasswordRequiredWarning())) {
@@ -93,18 +65,47 @@ public class Login extends Base {
 
 	}
 
-	@Test
-	public void loginWithoutProvidingUsername() throws Exception {
-		loginPage.login("", dataProp.getProperty("Password"));
-		Assert.assertEquals(loginPage.GetUsernameRequiredWarning(), dataProp.getProperty("RequiredWarningText"),
-				"User has displayed a Username is Required Warning.");
+	@Test()
+	public void loginWithValidCredenetials() throws Exception {
+		loginPage.login(prop.getProperty("Username"), prop.getProperty("Password"));
+		Assert.assertTrue(dashboard.IsUserNavigatedToDashboard(), "User has navigated to dashboard.");
 
 	}
 
 	@Test
-	public void loginWithoutProvidingPassword() throws Exception {
-		loginPage.login(dataProp.getProperty("Username"), "");
-		Assert.assertEquals(loginPage.GetPasswordRequiredWarning(), dataProp.getProperty("RequiredWarningText"),
-				"User has displayed a Username and Password is Required Warning.");
+	public void loginWithInValidCredenetials() throws Exception {
+		loginPage.login(dataProp.getProperty("invalidUsername"), dataProp.getProperty("invalidPassword"));
+		Assert.assertEquals(loginPage.GetErrorMessage(), dataProp.getProperty("invalidCredentailsErrorMessage"),
+				"User has displayed a Warning Text due to invalid Credentials");
 	}
+	 
+	   
+	   @Test public void loginWithInValidUsernameAndValidPassword() throws Exception
+	   { loginPage.login(dataProp.getProperty("invalidUsername"),
+	   prop.getProperty("Password"));
+	   Assert.assertEquals(loginPage.GetErrorMessage(),
+	   dataProp.getProperty("invalidCredentailsErrorMessage"),
+	   "User has displayed a Warning Text due to invalid Username."); }
+	   
+	   @Test public void loginWithValidUsernameAndInvalidPassword() throws Exception
+	   { loginPage.login(prop.getProperty("Username"),
+	   dataProp.getProperty("invalidPassword"));
+	   Assert.assertEquals(loginPage.GetErrorMessage(),
+	   dataProp.getProperty("invalidCredentailsErrorMessage"),
+	   "User has displayed a Warning Text due to invalid Password."); }
+	   
+	   
+	   @Test public void loginWithoutProvidingUsername() throws Exception {
+	   loginPage.login("", prop.getProperty("Password"));
+	   Assert.assertEquals(loginPage.GetUsernameRequiredWarning(),
+	   dataProp.getProperty("RequiredWarningText"),
+	   "User has displayed a Username is Required Warning.");
+	   
+	   }
+	   
+	   @Test public void loginWithoutProvidingPassword() throws Exception {
+	   loginPage.login(prop.getProperty("Username"), "");
+	   Assert.assertEquals(loginPage.GetPasswordRequiredWarning(),
+	   dataProp.getProperty("RequiredWarningText"),
+	   "User has displayed a Username and Password is Required Warning."); }
 }
